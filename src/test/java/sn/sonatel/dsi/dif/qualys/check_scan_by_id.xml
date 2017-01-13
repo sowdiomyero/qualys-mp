@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://qualysapi.qualys.com/qps/xsd/3.0/was/wasscan.xsd">
+    <responseCode>SUCCESS</responseCode>
+    <count>1</count>
+    <data>
+        <WasScan>
+            <id>12472786</id>
+            <name><![CDATA[My Vulnerability Scan]]></name>
+            <reference>was/1484216626681.17523860</reference>
+            <type>VULNERABILITY</type>
+            <mode>API</mode>
+            <multi>false</multi>
+            <target>
+                <webApp>
+                    <id>107674200</id>
+                    <name><![CDATA[DIF_IC_Obelix]]></name>
+                    <url><![CDATA[http://10.100.97.85:28080/obelix-web/]]></url>
+                </webApp>
+                <scannerAppliance>
+                    <type>INTERNAL</type>
+                    <friendlyName><![CDATA[is_range_nm]]></friendlyName>
+                </scannerAppliance>
+                <cancelOption>DEFAULT</cancelOption>
+            </target>
+            <profile>
+                <id>55153</id>
+                <name><![CDATA[Initial WAS Options]]></name>
+            </profile>
+            <options>
+                <count>15</count>
+                <list>
+                    <WasScanOption>
+                        <name>Web Application Authentication Record Name</name>
+                        <value><![CDATA[None]]></value>
+                    </WasScanOption>
+                    <WasScanOption>
+                        <name>Unexpected Error Threshold</name>
+                        <value><![CDATA[300]]></value>
+                    </WasScanOption>
+                    <WasScanOption>
+                        <name>Sensitive Content: Credit Card Numbers</name>
+                        <value><![CDATA[false]]></value>
+                    </WasScanOption>
+                    <WasScanOption>
+                        <name>Performance Settings</name>
+                        <value><![CDATA[MEDIUM]]></value>
+                    </WasScanOption>
+                    <WasScanOption>
+                        <name>Scanner Appliance</name>
+                        <value><![CDATA[is_range_nm (IP: 192.168.253.5, Scanner: 9.0.29-1, WAS: 4.0.37-1, Signatures: 2.3.518-3)]]></value>
+                    </WasScanOption>
+                    <WasScanOption>
+                        <name>Detection Scope</name>
+                        <value><![CDATA[COMPLETE]]></value>
+                    </WasScanOption>
+                    <WasScanOption>
+                        <name>Crawling Form Submissions</name>
+                        <value><![CDATA[BOTH]]></value>
+                    </WasScanOption>
+                    <WasScanOption>
+                        <name>Bruteforce Settings</name>
+                        <value><![CDATA[MINIMAL]]></value>
+                    </WasScanOption>
+                    <WasScanOption>
+                        <name>Option Profile Name</name>
+                        <value><![CDATA[Initial WAS Options]]></value>
+                    </WasScanOption>
+                    <WasScanOption>
+                        <name>Maximum Crawling Links</name>
+                        <value><![CDATA[300]]></value>
+                    </WasScanOption>
+                    <WasScanOption>
+                        <name>Timeout Error Threshold</name>
+                        <value><![CDATA[100]]></value>
+                    </WasScanOption>
+                    <WasScanOption>
+                        <name>Web Application Name</name>
+                        <value><![CDATA[DIF_IC_Obelix]]></value>
+                    </WasScanOption>
+                    <WasScanOption>
+                        <name>Request Parameter Set</name>
+                        <value><![CDATA[Initial Parameters]]></value>
+                    </WasScanOption>
+                    <WasScanOption>
+                        <name>Sensitive Content: Social Security Numbers (US)</name>
+                        <value><![CDATA[false]]></value>
+                    </WasScanOption>
+                    <WasScanOption>
+                        <name>Target URL</name>
+                        <value><![CDATA[http://10.100.97.85:28080/obelix-web/]]></value>
+                    </WasScanOption>
+                </list>
+            </options>
+            <launchedDate>2017-01-12T10:23:46Z</launchedDate>
+            <launchedBy>
+                <id>5569843</id>
+                <username>range_bs</username>
+                <firstName><![CDATA[IBRA]]></firstName>
+                <lastName><![CDATA[SEYE]]></lastName>
+            </launchedBy>
+            <status>FINISHED</status>
+            <scanDuration>415</scanDuration>
+            <summary>
+                <crawlDuration>99</crawlDuration>
+                <testDuration>316</testDuration>
+                <linksCrawled>2</linksCrawled>
+                <nbRequests>1015</nbRequests>
+                <resultsStatus>SUCCESSFUL</resultsStatus>
+                <authStatus>NONE</authStatus>
+                <os>Ubuntu / Linux 3.x</os>
+            </summary>
+            <sendMail>true</sendMail>
+        </WasScan>
+    </data>
+</ServiceResponse><!-- This content was generated with an evaluation version of this module. -->

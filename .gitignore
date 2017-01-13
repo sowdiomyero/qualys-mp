@@ -1,0 +1,4 @@
+.idea
+target/**
+**.iml
+qualys_post_new_scan_request.xml
