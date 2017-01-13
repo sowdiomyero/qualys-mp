@@ -1,3 +1,4 @@
+/*
 package sn.sonatel.dsi.dif.qualys.mojo;
 
 import org.apache.maven.plugin.AbstractMojo;
@@ -7,16 +8,21 @@ import org.apache.maven.plugins.annotations.Mojo;
 import org.apache.maven.plugins.annotations.Parameter;
 import sn.sonatel.dsi.dif.qualys.QualysAuthApi;
 
+*/
 /**
  * Created by ext_sow18 on 05/01/2017.
- */
+ *//*
 
+
+*/
 /**
  *
  * Un goal pour lancer un scan Qualys.
  *
- */
-@Mojo( name = "show-password")
+ *//*
+
+*/
+/*@Mojo( name = "show-password")
 public class QualysShowPasswordMojo extends AbstractMojo {
 
     public void execute() throws MojoExecutionException, MojoFailureException{
@@ -29,6 +35,8 @@ public class QualysShowPasswordMojo extends AbstractMojo {
         }catch (Exception e) {
             throw new MojoExecutionException("Une Exception s'est produite pendant l'execution du Goal SCAN ", e);
         }
-    }
+    }*//*
+
 
 }
+*/
