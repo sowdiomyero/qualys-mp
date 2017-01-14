@@ -16,7 +16,7 @@ import java.io.Writer;
 import java.nio.file.Paths;
 
 /**
- * Created by ext_sow18 on 10/01/2017.
+ * Created by sowdiomyero on 10/01/2017.
  */
 public class JaxbLaunchNewScanRequestParserTest {
 

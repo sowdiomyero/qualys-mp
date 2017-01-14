@@ -15,7 +15,7 @@ import java.io.StringWriter;
 import java.nio.file.Paths;
 
 /**
- * Created by ext_sow18 on 11/01/2017.
+ * Created by sowdiomyero on 11/01/2017.
  */
 public class JaxbSerializerUtils {
 

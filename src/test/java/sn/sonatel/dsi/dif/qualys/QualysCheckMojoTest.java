@@ -16,7 +16,7 @@ import javax.xml.bind.Unmarshaller;
 import java.io.File;
 
 /**
- * Created by ext_sow18 on 10/01/2017.
+ * Created by sowdiomyero on 10/01/2017.
  */
 public class QualysCheckMojoTest {
 

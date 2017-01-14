@@ -3,7 +3,7 @@ package sn.sonatel.dsi.dif.qualys.xml.request;
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 
 /**
- * Created by ext_sow18 on 10/01/2017.
+ * Created by sowdiomyero on 10/01/2017.
  */
 public class XmlCDATAAdapter extends XmlAdapter<String, String> {
 

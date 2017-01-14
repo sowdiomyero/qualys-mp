@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.prefs.Preferences;
 
 /**
- * Created by ext_sow18 on 06/01/2017.
+ * Created by sowdiomyero on 06/01/2017.
  */
 public class QualysAuthApi {
 
