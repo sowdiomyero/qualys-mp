@@ -18,14 +18,16 @@ public class QualysAuthApi {
     }
 
     public static String getUsername() {
-        return preferences.get("qualys_username", null);
+        String username =preferences.get("qualys_username", null);
+        if(username != null )
+             username = EncryptorUtils.decrypt(username);
+        return username;
     }
 
     public static String getPassword() {
         String password =preferences.get("qualys_password", null);
         if(password != null )
-            return password = EncryptorUtils.decrypt(password);
-
+            password = EncryptorUtils.decrypt(password);
         return password;
     }
 
