@@ -11,9 +11,10 @@ public class QualysAuthApi {
 
     static Preferences preferences = Preferences.userRoot().node("sn/sonatel/dsi/dif/qualys/mojo");
 
-    public static void setCredentials(String username, String password) {
-        preferences.put("qualys_username", username);
-        preferences.put("qualys_password", password);
+    public static void setCredentials(final String username, final String password) {
+
+        preferences.put("qualys_username", EncryptorUtils.encrypt(username));
+        preferences.put("qualys_password", EncryptorUtils.encrypt(password));
     }
 
     public static String getUsername() {
@@ -21,7 +22,11 @@ public class QualysAuthApi {
     }
 
     public static String getPassword() {
-        return preferences.get("qualys_password", null);
+        String password =preferences.get("qualys_password", null);
+        if(password != null )
+            return password = EncryptorUtils.decrypt(password);
+
+        return password;
     }
 
 
