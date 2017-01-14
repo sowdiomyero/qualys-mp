@@ -8,7 +8,7 @@ import javax.xml.bind.*;
 import java.io.File;
 
 /**
- * Created by ext_sow18 on 10/01/2017.
+ * Created by sowdiomyero on 10/01/2017.
  */
 public class JaxbCheckScanParserTest {
 
@@ -20,10 +20,12 @@ public class JaxbCheckScanParserTest {
         File xml = new File("src/test/java/sn/sonatel/dsi/dif/qualys/get_webapp_last_scan.xml");
         ServiceResponse response = (ServiceResponse) unmarshaller.unmarshal(xml);
 
+/*
         System.out.println("Valeur count recuperée : "+ response.getCount());
         System.out.println("Valeur count response code : "+ response.getResponseCode());
         System.out.println("Valeur webAppId  : "+ response.getData().getWebApp().getId());
         System.out.println("Valeur webApp Name  : "+ response.getData().getWebApp().getName());
+*/
 
         Assert.assertEquals(response.getData().getWebApp().getId(), 107674200);
         Assert.assertEquals(response.getData().getWebApp().getName(), "DIF_IC_Obelix");

@@ -5,7 +5,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 
 /**
- * Created by ext_sow18 on 11/01/2017.
+ * Created by sowdiomyero on 11/01/2017.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 public class ResponseErrorDetailsElement {

@@ -6,7 +6,7 @@ import org.apache.maven.plugin.MojoFailureException;
 import org.apache.maven.plugins.annotations.Mojo;
 
 /**
- * Created by ext_sow18 on 05/01/2017.
+ * Created by sowdiomyero on 05/01/2017.
  */
 
 /**
