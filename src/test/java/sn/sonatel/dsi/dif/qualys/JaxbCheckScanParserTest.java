@@ -17,7 +17,7 @@ public class JaxbCheckScanParserTest {
         JAXBContext jc = JAXBContext.newInstance(ServiceResponse.class);
 
         Unmarshaller unmarshaller = jc.createUnmarshaller();
-        File xml = new File("src/test/java/sn/sonatel/dsi/dif/qualys/get_webapp_last_scan.xml");
+        File xml = new File("src/test/java/sn/sonatel/dsi/dif/qualys/get_webapp_last_scan_by_id.xml");
         ServiceResponse response = (ServiceResponse) unmarshaller.unmarshal(xml);
 
 /*

@@ -1,5 +1,8 @@
 package sn.sonatel.dsi.dif.qualys;
 
+import com.sun.istack.NotNull;
+import com.sun.istack.Nullable;
+
 import javax.ws.rs.client.WebTarget;
 import java.util.Map;
 import java.util.prefs.Preferences;
@@ -11,12 +14,14 @@ public class QualysAuthApi {
 
     static Preferences preferences = Preferences.userRoot().node("sn/sonatel/dsi/dif/qualys/mojo");
 
-    public static void setCredentials(final String username, final String password) {
+
+    public static void setCredentials(@NotNull final String username, @NotNull final String password) {
 
         preferences.put("qualys_username", EncryptorUtils.encrypt(username));
         preferences.put("qualys_password", EncryptorUtils.encrypt(password));
     }
 
+    @Nullable
     public static String getUsername() {
         String username =preferences.get("qualys_username", null);
         if(username != null )
@@ -24,6 +29,7 @@ public class QualysAuthApi {
         return username;
     }
 
+    @Nullable
     public static String getPassword() {
         String password =preferences.get("qualys_password", null);
         if(password != null )
